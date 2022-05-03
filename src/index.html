@@ -8,13 +8,20 @@
 </head>
 
 <body>
-  <h1>Hello, World!</h1>
-  <form id="my_form">
-    <input id='input' type="" placeholder="Enter Gist Title">
-    <textarea name="" id="" cols="30" rows="10" placeholder="Enter Gist Content"></textarea>
-  </form>
-  <button id="submit" type="submit">Submit </button>
-
+  <div class="content">
+    <h1>Post To Gist!</h1>
+    <form id="my_form">
+      <input id='input' type="" placeholder="Enter Gist Title">
+      <textarea name="" id="textarea" cols="30" rows="10" placeholder="Enter Gist Content"></textarea>
+      <button id="submit" type="button">Submit </button>
+    </form>
+    <div id="loading">
+    </div>
+    <div id='thankyou' class="thank-you">
+      <button class="thank-you__close" id="close">x</button>
+      <p class="thank-you__text">Thank You For Your Submission.</p>
+    </div>
+  </div>
   <script type="module" src="./app.js"></script>
 </body>
 
