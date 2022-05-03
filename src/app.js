@@ -1,10 +1,10 @@
 //Loading Animation
 const loader = document.querySelector('#loading');
 function displayLoading() {
-	loader.classList.add('display')
+	loader.classList.add('display');
 	setTimeout(() => {
-		loader.classList.remove('display')
-	}, 2000)
+		loader.classList.remove('display');
+	}, 2000);
 }
 async function postToGist() {
 	const gistTitle = document.querySelector('input').value;
@@ -25,14 +25,13 @@ async function postToGist() {
 			}
 		})
 	});
-	displayLoading()
+	displayLoading();
 }
 
 const submitGist = document.querySelector('button');
 submitGist.addEventListener('click', postToGist);
 
-
-function hideLoading(){
+function hideLoading() {
 	loader.classList.remove('display');
 }
 submitGist.addEventListener('click', function() {
@@ -41,16 +40,13 @@ submitGist.addEventListener('click', function() {
 	}, 3000);
 });
 
-
 //Thank You
 const thankyou = document.getElementById('thankyou');
-const resetForm = document.getElementById('my_form')
-console.log(thankyou)
+const resetForm = document.getElementById('my_form');
+console.log(thankyou);
 const closeBtn = document.getElementById('close');
 closeBtn.addEventListener('click', function() {
 	let thankyou = document.getElementById('thankyou');
 	thankyou.style.display = 'none';
-	resetForm.reset()
+	resetForm.reset();
 });
-
-
